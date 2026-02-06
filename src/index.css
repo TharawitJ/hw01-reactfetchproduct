@@ -1,1 +1,25 @@
 @import "tailwindcss";
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.card::-webkit-scrollbar {
+  width: 8px;
+}
+.card::-webkit-scrollbar-button:start,
+.card::-webkit-scrollbar-button:end {
+  height: 1vh;
+}
+.card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: #d2deeb; /* slate-300 */
+  border-radius: 999px;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+  background-color: #505761; /* slate-400 */
+}
