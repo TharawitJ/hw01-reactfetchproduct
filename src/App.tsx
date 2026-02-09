@@ -37,7 +37,7 @@ function App() {
     setProducts(productsData);
   }
   function searchChange(e: React.ChangeEvent<HTMLInputElement>) {
-    setSearch(e.target.value);
+    setSearch(e.target.value.toLowerCase());
     setProducts(
       productsData.filter(
         (item) =>
