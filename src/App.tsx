@@ -58,7 +58,7 @@ function App() {
         Amount : {products.length}
       </span>
       <input
-        className="mt-3 ml-5 mb-1 border-3 rounded-2xl pl-3 text-xl p-1 max-w-130 border-b-cyan-800"
+        className="mt-3 ml-3 mb-1 border-3 rounded-2xl pl-3 text-xl p-1 max-w-130 border-b-cyan-800"
         type="text"
         placeholder="Search"
         onChange={(e) => searchChange(e)}
@@ -79,7 +79,7 @@ function App() {
         </button>
       </div>
       <hr className="text-gray-400"/>
-      <div className="flex justify-self-auto gap-x-15 gap-y-3 pl-14 p-5 flex-wrap bg-gray-100 flex-1 shrink-0">
+      <div className="flex justify-center gap-x-15 gap-y-5 py-5 flex-wrap bg-gray-100 flex-1 shrink-0">
         {products.map((item) => (
           <div key={item.id} className={cardStyles}>
             <div className="flex justify-center">
